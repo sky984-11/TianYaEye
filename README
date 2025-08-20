@@ -1,0 +1,11 @@
+实时监听tianya论坛帖子信息，支持飞书等通知方式
+
+## 📂 目录结构
+
+tianya_monitor/
+│── config.py        # 配置（URL 列表、飞书 webhook、代理等）
+│── notifier.py      # 通知模块（支持飞书、后面可扩展钉钉、邮件等）
+│── fetcher.py       # 抓取模块（requests + BeautifulSoup）
+│── parser.py        # 解析模块（提取楼层、作者、内容、引用关系）
+│── monitor.py       # 监控逻辑（多 URL 轮询）
+│── main.py          # 程序入口
